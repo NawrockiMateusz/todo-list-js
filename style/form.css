@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.form__input{
+    max-width: 650px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form__button{
+    color: white;
+    background-color: teal;
+    padding: 12px 10px;
+    border: none;
+}
