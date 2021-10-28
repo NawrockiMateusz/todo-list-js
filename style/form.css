@@ -1,14 +1,15 @@
 .form{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .form__input{
     max-width: 650px;
     width: 100%;
     padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .form__button{
@@ -16,4 +17,8 @@
     background-color: teal;
     padding: 12px 10px;
     border: none;
+}
+.form__button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 128, 128, 0.76);
 }

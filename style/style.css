@@ -16,3 +16,7 @@ html {
     max-width: 900px;
     width: 100%;
 }
+
+.main__header{
+    margin: 50px 10px 20px;
+}
