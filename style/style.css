@@ -9,6 +9,7 @@ html {
 .body {
     background-color: #eee;
     font-family: 'Montserrat', sans-serif;
+    word-break: break-word;
 }
 
 .main {

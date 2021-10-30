@@ -1,5 +1,24 @@
-.tasks{
+.list{
     list-style: none;
-    padding: 10px 30px;
+    padding: 30px;
     margin: 0;
 }
+
+.listItem{
+    padding: 8px;
+    
+}
+
+.list__container{
+    display: flex;
+    border-bottom: 2px solid #eee;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+/* .listItem--done{
+    text-decoration: line-through;
+}
+
+.list__button--remove{
+} */
