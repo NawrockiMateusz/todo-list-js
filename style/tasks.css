@@ -1,15 +1,14 @@
-.list{
+.list {
     list-style: none;
     padding: 30px;
     margin: 0;
 }
 
-.listItem{
+.listItem {
     padding: 8px;
-    
 }
 
-.list__container{
+.list__container {
     display: flex;
     border-bottom: 2px solid #eee;
     padding: 10px;
