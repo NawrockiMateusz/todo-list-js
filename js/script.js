@@ -14,6 +14,11 @@
         render();
     }
 
+    const toggleTaskDone = (index) => {
+        tasks[index].done = !tasks[index].done;
+        render();
+    }
+
 
     const render = () => {
         let htmlString = "";
@@ -40,7 +45,13 @@
             });
         });
 
-        const doneButtons = document.querySelectorAll
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
+
+        toggleDoneButtons.forEach((toggleDoneButton, index) => {
+            toggleDoneButton.addEventListener("click", () =>{
+                toggleTaskDone(index);
+            });
+        });
     };
 
 
