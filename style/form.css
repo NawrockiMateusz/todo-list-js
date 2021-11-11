@@ -29,11 +29,13 @@
     background-color: teal;
     padding: 12px 10px;
     border: none;
+    margin-left: 10px;
 }
 
 @media (max-width: 767px) {
     .form__button {
         width: 100%;
+        margin-left: 0;
     }
 }
 

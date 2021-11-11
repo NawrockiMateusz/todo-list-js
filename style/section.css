@@ -15,6 +15,13 @@
     border-bottom: 3px solid #eee;
 }
 
+@media (max-width: 767px) {
+    .section__header {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .section__button {
     background: none;
     border: none;
@@ -22,11 +29,20 @@
     margin: 0 5px;
 }
 
+@media (max-width: 767px) {
+    .section__button {
+        padding: 5px;
+    }
+    .section__buttons {
+        text-align: center;
+    }
+}
+
 .section__button:hover {
     cursor: pointer;
 }
 
-.section__button:disabled{
+.section__button:disabled {
     color: #aaa;
     cursor: default;
 }
