@@ -3,8 +3,25 @@
     margin: 10px;
 }
 
-.section__header {
-    border-bottom: 3px solid #eee;
+.section__subHeader {
     margin: 0px;
     padding: 20px;
+}
+
+.section__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #eee;
+}
+
+.section__button{
+    background: none;
+    border: none;
+    color: teal;
+    margin: 0 5px;
+}
+
+.section__button:hover{
+    cursor: pointer;
 }

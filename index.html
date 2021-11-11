@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="style/form.css">
     <link rel="stylesheet" href="style/list.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/62/premium/62025.png?token=exp=1635684813~hmac=035c16d1635c55668c905f494966ee85">
+    <link rel="icon"
+        href="https://cdn-icons.flaticon.com/png/512/62/premium/62025.png?token=exp=1635684813~hmac=035c16d1635c55668c905f494966ee85">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
@@ -27,8 +28,8 @@
             <h1 class="main__header">Lista zadań</h1>
         </header>
         <section class="section">
-            <header>
-                <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <header class="section__header">
+                <h2 class="section__subHeader">Dodaj nowe zadanie</h2>
             </header>
             <form class="form js-form">
                 <input type="text" class="form__input js-input" autofocus placeholder="Co jest do zrobienia?">
@@ -36,8 +37,12 @@
             </form>
         </section>
         <section class="section">
-            <header>
-                <h2 class="section__header">Lista zadań</h2>
+            <header class="section__header">
+                <h2 class="section__subHeader">Lista zadań</h2>
+                <div class="section__buttons">
+                    <button class="section__button js-hiddenDone">Ukryj ukończone</button>
+                    <button class="section__button js-allDone">Ukończ wszystkie</button>
+                </div>
             </header>
             <ul class="list js-tasks">
             </ul>

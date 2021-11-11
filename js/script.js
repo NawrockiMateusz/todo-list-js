@@ -1,25 +1,30 @@
 {
-    const tasks = [
+    let tasks = [
     ];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent, },
+        ]
         render();
     }
 
     const removeTask = (index) => {
-        tasks.splice(index, 1);
+        tasks = [
+            ...tasks.slice(0, index),
+            ...tasks.slice(index + 1),
+        ]
         render();
     }
 
     const toggleTaskDone = (index) => {
-        tasks[index].done = !tasks[index].done;
+        tasks = tasks.map((task, taskIndex) => (taskIndex === index) ? ({ ...task, done: !task.done }) : ({ ...task }));
         render();
     }
 
     const bindEvenets = () => {
+
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -49,7 +54,7 @@
                 <button class="js-remove list__button list__button--remove">🗑</button>
                 </li>
 
-        `
+        `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
