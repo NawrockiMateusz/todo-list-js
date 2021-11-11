@@ -27,6 +27,12 @@
     border: none;
     color: teal;
     margin: 0 5px;
+    transition: 0.5s;
+}
+
+.section__button:hover {
+    color: rgb(12, 201, 201);
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -36,10 +42,6 @@
     .section__buttons {
         text-align: center;
     }
-}
-
-.section__button:hover {
-    cursor: pointer;
 }
 
 .section__button:disabled {

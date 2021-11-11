@@ -30,6 +30,13 @@
     padding: 12px 10px;
     border: none;
     margin-left: 10px;
+    transition: 0.5s;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 128, 128, 0.76);
+    transform: scale(1.1);
 }
 
 @media (max-width: 767px) {
@@ -37,9 +44,4 @@
         width: 100%;
         margin-left: 0;
     }
-}
-
-.form__button:hover {
-    cursor: pointer;
-    background-color: rgba(0, 128, 128, 0.76);
 }
